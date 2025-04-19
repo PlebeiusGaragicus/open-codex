@@ -1,0 +1,16 @@
+# Core dependencies
+click>=8.1.0        # CLI framework
+openai>=1.0.0       # OpenAI API client
+google-generativeai>=0.3.0  # Google Generative AI
+rich>=13.0.0        # Rich text and formatting in terminal
+pyyaml>=6.0.0       # YAML configuration handling
+requests>=2.31.0    # HTTP client
+python-dotenv>=1.0.0  # Environment variable management
+
+# Security
+sandbox>=0.1.0      # Process sandboxing
+
+# Testing
+pytest>=7.0.0
+pytest-cov>=4.1.0
+pytest-mock>=3.12.0

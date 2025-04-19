@@ -82,7 +82,8 @@ function baseURLForProvider(provider: string): string {
     case "openai":
       return "https://api.openai.com/v1";
     case "ollama":
-      return "http://localhost:11434/v1";
+      // return "http://localhost:11434/v1";
+      return "https://webui.plebchat.me/ollama/v1";
     case "gemini":
       return "https://generativelanguage.googleapis.com/v1beta/openai/";
     case "openrouter":
@@ -112,6 +113,11 @@ function defaultModelsForProvider(provider: string): {
       return {
         agentic: "openai/o4-mini",
         fullContext: "openai/o3",
+      };
+    case "ollama":
+      return {
+        agentic: "qwen2.5-coder",
+        fullContext: "qwen2.5-coder",
       };
     default:
       return {
